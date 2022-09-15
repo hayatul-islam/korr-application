@@ -1,10 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 export default function Header() {
-  const active = {
-    color: "red",
-  };
+  const [hover, setHover] = useState(false);
   return (
     <>
       <div className="flex justify-between items-center px-6 pt-6">
@@ -16,35 +14,50 @@ export default function Header() {
             ></path>
           </svg>
         </div>
-        <nav className="text-xl space-x-4 bg-white shadow-lg px-4 py-2 rounded">
+        <nav className="text-xl space-x-6 bg-white shadow-lg px-4 py-2 rounded font-normal">
           <NavLink
+            onMouseEnter={() => setHover(true)}
+            onMouseLeave={() => setHover(false)}
             className={({ isActive }) =>
-              isActive ? "text-[#34d601]" : "text-[#20231f]"
+              isActive
+                ? "text-[#34d601] font-medium"
+                : `${hover && "hover:text-[#20231f] text-[#8f908e]"}`
             }
             to="/product"
-            activeClassName={active}
           >
             Product
           </NavLink>
           <NavLink
+            onMouseEnter={() => setHover(true)}
+            onMouseLeave={() => setHover(false)}
             className={({ isActive }) =>
-              isActive ? "text-[#34d601]" : "text-[#20231f]"
+              isActive
+                ? "text-[#34d601] font-medium"
+                : `${hover && "hover:text-[#20231f] text-[#8f908e]"}`
             }
             to="/book"
           >
             Book a Demo
           </NavLink>
           <NavLink
+            onMouseEnter={() => setHover(true)}
+            onMouseLeave={() => setHover(false)}
             className={({ isActive }) =>
-              isActive ? "text-[#34d601]" : "text-[#20231f]"
+              isActive
+                ? "text-[#34d601] font-medium"
+                : `${hover && "hover:text-[#20231f] text-[#8f908e]"}`
             }
             to="/about"
           >
             About
           </NavLink>
           <NavLink
+            onMouseEnter={() => setHover(true)}
+            onMouseLeave={() => setHover(false)}
             className={({ isActive }) =>
-              isActive ? "text-[#34d601]" : "text-[#20231f]"
+              isActive
+                ? "text-[#34d601] font-medium"
+                : `${hover && "hover:text-[#20231f] text-[#8f908e]"}`
             }
             to="/misson"
           >
