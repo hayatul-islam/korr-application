@@ -72,6 +72,7 @@ export default function Header() {
                 position: "fixed",
                 left: "50%",
                 transform: "translateX(-50%) ",
+                zIndex: 9999,
               }}
               transition={{
                 duration: 0.8,
