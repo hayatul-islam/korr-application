@@ -47,8 +47,16 @@ export default function Header() {
           {isMainMenu && !isAnimate && <Menubar />}
           {isMainMenu && isAnimate && (
             <motion.div
-              initial={{ marginRight: "300px" }}
-              animate={{ marginRight: "0px" }}
+              initial={{
+                position: "fixed",
+                left: "50%",
+                transform: "translateX(-50%) ",
+              }}
+              animate={{
+                position: "static",
+                left: "100%",
+                transform: "translateX(.1%)",
+              }}
               transition={{
                 duration: 0.8,
                 ease: [0, 0.1, 0.2, 1.01],
@@ -59,8 +67,12 @@ export default function Header() {
           )}
           {!isMainMenu && (
             <motion.div
-              initial={{ position: "fixed", right: 0 }}
-              animate={{ position: "fixed", right: "35%" }}
+              initial={{ position: "fixed", left: "100%" }}
+              animate={{
+                position: "fixed",
+                left: "50%",
+                transform: "translateX(-50%) ",
+              }}
               transition={{
                 duration: 0.8,
                 ease: [0, 0.1, 0.2, 1.01],
