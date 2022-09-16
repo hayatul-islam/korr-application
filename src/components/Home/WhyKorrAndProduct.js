@@ -1,12 +1,54 @@
 import React from "react";
 import { VscChevronRight } from "react-icons/vsc";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import KorAndProduct from "./KorAndProduct";
 
 function WhyKorrAndProduct() {
-  const navigate = useNavigate();
-  const handleNavigate = (value) => {
-    navigate(`/#${value}`);
-  };
+  //fake data
+  const korAndProducts = [
+    {
+      id: 1,
+      title: "Why korr",
+      details:
+        "Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to.",
+    },
+    {
+      id: 2,
+      title: "Product",
+      details:
+        "Trysail Sail ho Corsair red ensign hulk smartly boom jib rum gangway. Case shot Shiver me timbers gangplank crack Jennys tea cup ballast Blimey lee snow crow's nest rutters. Fluke jib scourge of the seven seas boatswain schooner gaff booty Jack Tar transom spirits.",
+      product: [
+        {
+          productId: 1,
+          title: "Concept",
+          details:
+            "Insurance is all about expecting the unexpected. Agents need a platform that lets them rapidly adapt to unforeseen changes. Speed is the guiding philosophy driving Korr.",
+          img: "https://www.gokorr.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fnwzoe7sd%2Fproduction%2F6edcf6d2f0f3e74b5863ede61a6e73a2c1f821df-2543x2797.png%3Fw%3D1060&w=1920&q=75",
+        },
+        {
+          productId: 2,
+          title: "Structure",
+          details:
+            "Insurance is all about expecting the unexpected. Agents need a platform that lets them rapidly adapt to unforeseen changes. Speed is the guiding philosophy driving Korr.",
+          img: "",
+        },
+        {
+          productId: 3,
+          title: "Build",
+          details:
+            "Insurance is all about expecting the unexpected. Agents need a platform that lets them rapidly adapt to unforeseen changes. Speed is the guiding philosophy driving Korr.",
+          img: "",
+        },
+        {
+          productId: 4,
+          title: "Product",
+          details:
+            "Insurance is all about expecting the unexpected. Agents need a platform that lets them rapidly adapt to unforeseen changes. Speed is the guiding philosophy driving Korr.",
+          img: "",
+        },
+      ],
+    },
+  ];
   return (
     <>
       {/* highlight */}
@@ -37,36 +79,9 @@ function WhyKorrAndProduct() {
 
       {/* details  */}
       <section className="space-y-20 py-6">
-        <div id="why-korr" className="flex space-x-12">
-          <div>
-            <button className="text-sm border border-black px-[5px] py-px rounded-lg">
-              Why korr
-            </button>
-          </div>
-          <p className="max-w-[680px] text-2xl">
-            Deadlights jack lad schooner scallywag dance the hempen jig carouser
-            broadside cable strike colors. Bring a spring upon her cable
-            holystone blow the man down spanker Shiver me timbers to go on
-            account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul
-            squiffy black spot yardarm spyglass sheet transom heave to.
-          </p>
-        </div>
-        <div id="product" className="flex space-x-12">
-          <div>
-            <button className="text-sm border border-black px-[5px] py-px rounded-lg">
-              Product
-            </button>
-          </div>
-          <div>
-            <p className="max-w-[680px] text-2xl">
-              Trysail Sail ho Corsair red ensign hulk smartly boom jib rum
-              gangway. Case shot Shiver me timbers gangplank crack Jennys tea
-              cup ballast Blimey lee snow crow's nest rutters. Fluke jib scourge
-              of the seven seas boatswain schooner gaff booty Jack Tar transom
-              spirits.
-            </p>
-          </div>
-        </div>
+        {korAndProducts?.map((product) => (
+          <KorAndProduct key={product?.id} product={product} />
+        ))}
       </section>
     </>
   );
