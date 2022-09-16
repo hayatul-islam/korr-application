@@ -2,6 +2,7 @@ import React from "react";
 
 function Product({ product, singelProductId, setSingleProductId }) {
   const { title, details, productId } = product;
+
   return (
     <div className="flex space-x-12">
       <div className="min-w-[70px] mt-1">
