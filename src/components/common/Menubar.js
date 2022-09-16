@@ -5,7 +5,7 @@ function Menubar() {
   const [hover, setHover] = useState(false);
   return (
     <>
-      <nav className="text-xl space-x-6 bg-white shadow-lg px-4 py-2 rounded font-normal">
+      <nav className="flex text-xl space-x-6 bg-white shadow-lg px-4 py-2 rounded font-normal">
         <NavLink
           onMouseEnter={() => setHover(true)}
           onMouseLeave={() => setHover(false)}
@@ -26,7 +26,7 @@ function Menubar() {
               ? "text-[#34d601] font-medium"
               : `${hover && "hover:text-[#20231f] text-[#8f908e]"}`
           }
-          to="/book"
+          to="/book-a-demo"
         >
           Book a Demo
         </NavLink>
