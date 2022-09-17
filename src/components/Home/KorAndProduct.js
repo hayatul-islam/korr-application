@@ -14,7 +14,7 @@ function KorAndProduct({ product }) {
   }, [singelProductId, products]);
 
   return (
-    <div className="flex space-x-12">
+    <div id={title} className="flex space-x-12">
       <div>
         <button className="text-sm border border-black px-[5px] py-px rounded-lg">
           {title}

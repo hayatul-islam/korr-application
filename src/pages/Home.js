@@ -1,5 +1,6 @@
 import React from "react";
 import Insurance from "../components/Home/Insurance";
+import Testimonials from "../components/Home/Testimonials";
 import VideoAnimation from "../components/Home/VideoAnimation";
 import WhyKorrAndProduct from "../components/Home/WhyKorrAndProduct";
 
@@ -11,6 +12,7 @@ export default function Home() {
         <VideoAnimation />
         <WhyKorrAndProduct />
       </div>
+      <Testimonials />
     </>
   );
 }
