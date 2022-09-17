@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import ContractForm from "./ContractForm";
 import ContractInfo from "./ContractInfo";
 
@@ -33,6 +34,67 @@ function Footer() {
               <ContractInfo setIsContract={setIsContract} />
             )}
           </div>
+        </div>
+
+        {/* footer bottom bar  */}
+        <div className="flex items-end justify-between">
+          <div className="flex space-x-6 pt-6">
+            <div className="min-w-[100px]">
+              <NavLink
+                to=""
+                className="text-white text-[16px] hover:underline block "
+              >
+                Home
+              </NavLink>
+              <NavLink
+                to=""
+                className="text-white text-[16px] hover:underline block "
+              >
+                Product
+              </NavLink>
+              <NavLink
+                to=""
+                className="text-white text-[16px] hover:underline block "
+              >
+                FAG
+              </NavLink>
+            </div>
+            <div className="min-w-[100px]">
+              <NavLink
+                to="/about"
+                className="text-white text-[16px] hover:underline block "
+              >
+                About
+              </NavLink>
+              <NavLink
+                to=""
+                className="text-white text-[16px] hover:underline block "
+              >
+                Contract
+              </NavLink>
+              <NavLink
+                to=""
+                className="text-white text-[16px] hover:underline block "
+              >
+                Careers
+              </NavLink>
+            </div>
+            <div className="min-w-[100px]">
+              <NavLink
+                to=""
+                className="text-white text-[16px] hover:underline block "
+              >
+                Terms
+              </NavLink>
+              <NavLink
+                to=""
+                className="text-white text-[16px] hover:underline block "
+              >
+                Privacy
+              </NavLink>
+            </div>
+          </div>
+          <p className="text-[#8f908e] text-[16px]">© copyright 2022 </p>
         </div>
       </div>
     </>
