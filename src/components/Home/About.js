@@ -27,7 +27,7 @@ function About() {
           </p>
         </div>
         {/* about  */}
-        <div className="grid grid-cols-2 gap-4 pt-8">
+        <div className="grid grid-cols-2 gap-8 pt-8">
           <div className="space-y-6">
             <div className="h-[260px]">
               <img
@@ -60,7 +60,7 @@ function About() {
             <div className="h-[260px]">
               <img
                 className="w-full h-full rounded"
-                src="https://images.unsplash.com/photo-1649835580620-9b35255efaad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzMwfHxtaXNzaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                src="https://images.unsplash.com/photo-1628841878739-f2f0fc1c0fb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTAwfDE3ODE0MDh8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
                 alt=""
               />
             </div>
