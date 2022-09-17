@@ -35,13 +35,13 @@ function KorAndProduct({ product }) {
           </div>
           <div>
             {products !== undefined && products?.length !== 0 && (
-              <div class="relative w-[350px] h-[390px] border rounded-2xl overflow-hidden">
+              <div className="relative w-[350px] h-[390px] border rounded-2xl overflow-hidden">
                 <img
                   src={singleProduct?.img}
                   alt="Avatar"
-                  class="object-cover w-full h-full"
+                  className="object-cover w-full h-full"
                 />
-                <div class="absolute w-full py-2.5 top-0 inset-x-0">
+                <div className="absolute w-full py-2.5 top-0 inset-x-0">
                   <div className="flex justify-between px-3 text-white text-[16px]">
                     <h6 className="">{singleProduct?.title}</h6>
                     <h6 className="text-[#8f908e]">
