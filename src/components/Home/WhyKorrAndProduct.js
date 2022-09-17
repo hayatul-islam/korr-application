@@ -22,29 +22,29 @@ function WhyKorrAndProduct() {
           productId: 1,
           title: "Concept",
           details:
-            "Insurance is all about expecting the unexpected. Agents need a platform that lets them rapidly adapt to unforeseen changes. Speed is the guiding philosophy driving Korr.",
-          img: "https://www.gokorr.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fnwzoe7sd%2Fproduction%2F6edcf6d2f0f3e74b5863ede61a6e73a2c1f821df-2543x2797.png%3Fw%3D1060&w=1920&q=75",
+            "Sweet carrot cake biscuit gummies lemon drops biscuit wafer apple pie jelly. Halvah gummi bears chupa chups candy canes sweet halvah tart sweet. Lemon drops sweet chocolate cake croissant topping cotton candy bonbon chocolate.",
+          img: "https://images.unsplash.com/photo-1658248165252-71e116af1b34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjA3fHxkZXNpZ24lMjBkYXJrfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
         },
         {
           productId: 2,
           title: "Structure",
           details:
-            "Insurance is all about expecting the unexpected. Agents need a platform that lets them rapidly adapt to unforeseen changes. Speed is the guiding philosophy driving Korr.",
-          img: "",
+            "Sugar plum topping cotton candy sesame snaps powder topping oat cake. Shortbread powder cake sweet powder toffee. Cake topping chocolate candy canes cheesecake chupa chups topping cake sesame snaps. ",
+          img: "https://images.unsplash.com/photo-1659117296097-6347168cea00?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjIwfHxkZXNpZ24lMjBkYXJrfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
         },
         {
           productId: 3,
           title: "Build",
           details:
-            "Insurance is all about expecting the unexpected. Agents need a platform that lets them rapidly adapt to unforeseen changes. Speed is the guiding philosophy driving Korr.",
-          img: "",
+            "Candy gingerbread marzipan jujubes chocolate cotton candy donut. Wafer cake icing lollipop halvah marzipan. Caramels gummies liquorice lollipop liquorice croissant topping jujubes. Dessert carrot cake oat cake dragée apple pie wafer tart. ",
+          img: "https://images.unsplash.com/photo-1656427411300-4a35e3c7d058?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODZ8fGRlc2lnbiUyMGRhcmt8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
         },
         {
           productId: 4,
           title: "Product",
           details:
-            "Insurance is all about expecting the unexpected. Agents need a platform that lets them rapidly adapt to unforeseen changes. Speed is the guiding philosophy driving Korr.",
-          img: "",
+            "Cake dessert jelly-o muffin icing jelly dessert lollipop. Icing chocolate cheesecake carrot cake pastry macaroon. Caramels fruitcake chocolate cake dragée chocolate bar carrot cake icing cheesecake. Cotton candy candy canes brownie cake danish pastry pudding.",
+          img: "https://images.unsplash.com/photo-1658248165127-f880b5a74e98?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjA1fHxkZXNpZ24lMjBkYXJrfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
         },
       ],
     },

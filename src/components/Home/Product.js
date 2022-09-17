@@ -4,7 +4,7 @@ import React, { useEffect, useRef } from "react";
 function Product({ product, singelProductId, setSingleProductId }) {
   const { title, details, productId } = product;
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: false });
+  const isInView = useInView(ref);
 
   useEffect(() => {
     if (isInView) {
