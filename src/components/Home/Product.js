@@ -12,7 +12,7 @@ function Product({ product, singelProductId, setSingleProductId }) {
     } else {
       setSingleProductId(productId);
     }
-  }, [isInView, productId]);
+  }, [isInView, productId, setSingleProductId]);
 
   return (
     <>

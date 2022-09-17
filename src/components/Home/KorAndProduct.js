@@ -11,7 +11,7 @@ function KorAndProduct({ product }) {
       (product) => product?.productId === singelProductId
     );
     setSingleProduct(findProduct);
-  }, [singelProductId]);
+  }, [singelProductId, products]);
 
   return (
     <div className="flex space-x-12">
