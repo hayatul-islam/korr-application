@@ -50,7 +50,7 @@ function Menubar() {
               ? "text-[#34d601] font-medium"
               : `${hover && "hover:text-[#20231f] text-[#8f908e]"}`
           }
-          to="/misson"
+          to="/mission"
         >
           Misson
         </NavLink>
