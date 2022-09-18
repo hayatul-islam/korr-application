@@ -33,7 +33,7 @@ function Testimonials() {
 
   return (
     <>
-      <div className="bg-[#20231f] py-8 px-6">
+      <div className="bg-[#20231f] py-6 lg:py-8 px-6">
         <Testimonial
           testimonial={testimonial}
           totolTestimonial={testimonials?.length}

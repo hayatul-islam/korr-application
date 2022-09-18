@@ -22,40 +22,52 @@ function Testimonial({ testimonial, totolTestimonial, setId }) {
   };
   return (
     <>
-      <div className="grid grid-cols-2 gap-6">
-        <div className="grid items-between">
-          <div>
-            <div className="flex justify-between pb-6">
+      <div className="grid lg:grid-cols-2 gap-6">
+        <div className="grid items-between order-last lg:order-none">
+          <div className="pt-12 lg:pt-0">
+            <div className="lg:flex lg:justify-between pb-4 lg:pb-6">
               <button
-                className={`text-sm border border-[#484b47] text-[#8f908e] px-[5px] py-px rounded-lg`}
+                className={`hidden lg:block text-sm border border-[#484b47] text-[#8f908e] px-[5px] py-px rounded-lg`}
               >
                 Testimonials
               </button>
               <p className="text-[16px] text-[#e9e9e9]">{title}</p>
             </div>
-            <p className="text-3xl text-white leading-10">{body}</p>
+            <p className="text-[16px] md:text-[24px] lg:text-3xl text-white lg:leading-10">
+              {body}
+            </p>
           </div>
-          <div className="flex justify-between items-end">
+          <div className="flex justify-between lg:items-end pt-12 lg:pt-0">
             <button
               onClick={() => hanleLoaded("previous")}
-              className="text-white text-[16px] hover:underline "
+              className="text-white text-[16px] hover:underline z-50"
             >
               Previous
             </button>
-            <div className="flex space-x-48">
-              <h5 className="text-white">
+            <div className=" lg:flex space-x-0 lg:space-x-48">
+              <h5 className="text-white hidden lg:block">
                 {id}/{totolTestimonial}
               </h5>
               <button
                 onClick={() => hanleLoaded("next")}
-                className="text-white text-[16px] hover:underline "
+                className="text-white text-[16px] hover:underline z-50"
               >
                 Next
               </button>
             </div>
           </div>
         </div>
-        <div className="w-full h-[600px]">
+        <div className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px]">
+          <div className="flex justify-between pb-6">
+            <button
+              className={`lg:hidden text-sm border border-[#484b47] text-[#8f908e] px-[5px] py-px rounded-lg`}
+            >
+              Testimonials
+            </button>
+            <h5 className="text-white lg:hidden">
+              {id}/{totolTestimonial}
+            </h5>
+          </div>
           <img className="w-full h-full rounded-xl" src={img} alt="" />
         </div>
       </div>
