@@ -6,8 +6,8 @@ function Footer() {
   return (
     <>
       <div className="bg-[#20231f] py-8 px-6 ">
-        <div className="flex justify-between">
-          <div className="flex">
+        <div className=" md:flex justify-between md:space-x-2">
+          <div className="lg:flex">
             <div className="min-w-[100px]">
               <button
                 className={`text-sm border border-[#484b47] text-[#8f908e] px-[5px] pb-1 rounded-md`}
@@ -15,8 +15,10 @@ function Footer() {
                 Contract
               </button>
             </div>
-            <div className="text-white max-w-[480px] space-y-6">
-              <h3 className="text-7xl ">Chocolate bar jelly lollipop.</h3>
+            <div className="text-white md:max-w-[480px] md:space-y-6 space-y-4 pt-2 lg:pt-0">
+              <h3 className="text-3xl md:text-4xl lg:text-7xl ">
+                Chocolate bar jelly lollipop.
+              </h3>
               <p className="text-[16px] ">
                 Chocolate bar jelly lollipop brownie brownie. Pie dessert powder
                 cake cake dessert cake. Cake cake muffin tootsie roll carrot
@@ -25,14 +27,14 @@ function Footer() {
               </p>
             </div>
           </div>
-          <div className="max-w-[474px]">
+          <div className="w-full md:w-[400px] lg:w-[474px] py-6 md:py-0 z-50">
             <Contract />
           </div>
         </div>
 
         {/* footer bottom bar  */}
         <div className="flex items-end justify-between">
-          <div className="flex space-x-6 pt-6">
+          <div className="hidden md:flex space-x-6 pt-6">
             <div className="min-w-[100px]">
               <NavLink
                 to=""

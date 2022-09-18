@@ -7,7 +7,7 @@ function ContractInfo({ setIsContract }) {
   return (
     <>
       <div onClick={handleContract}>
-        <div className="h-[388px]">
+        <div className="lg:h-[388px]">
           <img
             className="w-full h-full rounded "
             src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8b2ZmaWNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
