@@ -16,6 +16,7 @@ function ContractInfo({ setIsContract }) {
         </div>
         <div className="px-3 pt-4 space-y-2">
           <button
+            onClick={handleContract}
             className={`text-sm border border-[#484b47] text-[#20231f] px-[5px] pb-1 rounded-md tracking-wide`}
           >
             Get in touch

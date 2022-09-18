@@ -6,7 +6,7 @@ function Footer() {
   return (
     <>
       <div className="bg-[#20231f] py-8 px-6 ">
-        <div className=" md:flex justify-between md:space-x-2">
+        <div className="block md:flex md:justify-between md:space-x-2">
           <div className="lg:flex">
             <div className="min-w-[100px]">
               <button
