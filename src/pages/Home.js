@@ -3,6 +3,7 @@ import About from "../components/Home/About";
 import Insurance from "../components/Home/Insurance";
 import Testimonials from "../components/Home/Testimonials";
 import VideoAnimation from "../components/Home/VideoAnimation";
+import WhyKorrAndProduct from "../components/Home/WhyKorrAndProduct";
 
 export default function Home() {
   return (
@@ -10,7 +11,7 @@ export default function Home() {
       <div className="px-6">
         <Insurance />
         <VideoAnimation />
-        {/* <WhyKorrAndProduct /> */}
+        <WhyKorrAndProduct />
       </div>
       <Testimonials />
       <div className="px-6">

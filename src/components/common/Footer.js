@@ -1,10 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
-import ContractForm from "./ContractForm";
-import ContractInfo from "./ContractInfo";
+import Contract from "./contract/Contract";
 
 function Footer() {
-  const [isContract, setIsContract] = useState(false);
   return (
     <>
       <div className="bg-[#20231f] py-8 px-6 ">
@@ -27,12 +25,8 @@ function Footer() {
               </p>
             </div>
           </div>
-          <div className="w-[478px] h-[530px] bg-white rounded-xl">
-            {isContract ? (
-              <ContractForm setIsContract={setIsContract} />
-            ) : (
-              <ContractInfo setIsContract={setIsContract} />
-            )}
+          <div className="max-w-[474px]">
+            <Contract />
           </div>
         </div>
 
