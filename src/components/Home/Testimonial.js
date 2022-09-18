@@ -44,8 +44,14 @@ function Testimonial({ testimonial, totolTestimonial, setId }) {
             >
               Previous
             </button>
-            <div className=" lg:flex space-x-0 lg:space-x-48">
-              <h5 className="text-white hidden lg:block">
+            <button
+              onClick={() => hanleLoaded("next")}
+              className="text-white text-[16px] hover:underline z-50 lg:hidden"
+            >
+              Next
+            </button>
+            <div className="hidden lg:flex  space-x-48">
+              <h5 className="text-white ">
                 {id}/{totolTestimonial}
               </h5>
               <button
