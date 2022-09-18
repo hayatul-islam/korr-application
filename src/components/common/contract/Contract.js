@@ -6,7 +6,7 @@ function Contract() {
   const [isContract, setIsContract] = useState(false);
   return (
     <>
-      <div className=" bg-white rounded-xl pb-2">
+      <div className=" bg-white rounded-xl pb-2 z-50">
         {isContract ? (
           <ContractForm setIsContract={setIsContract} />
         ) : (

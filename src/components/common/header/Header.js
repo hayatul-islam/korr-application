@@ -6,8 +6,8 @@ import MobileMenu from "./MobileMenu";
 import ScrollMenu from "./ScrollMenu";
 
 const variants = {
-  open: { opacity: 1, x: 0 },
-  closed: { opacity: 0, x: "-100%" },
+  open: { display: "block", x: 0 },
+  closed: { display: "none", x: "-100%" },
 };
 
 export default function Header() {
