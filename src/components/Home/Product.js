@@ -16,8 +16,8 @@ function Product({ product, singelProductId, setSingleProductId }) {
 
   return (
     <>
-      <div ref={ref} id={productId} className="flex space-x-12">
-        <div className="min-w-[70px] mt-1">
+      <div ref={ref} id={productId} className="lg:flex lg:space-x-12 ">
+        <div className="min-w-[70px] mt-1 py-3 lg:py-0">
           <button
             onClick={() => setSingleProductId(productId)}
             className={`text-sm border border-black px-[5px] py-px rounded-lg ${
@@ -28,7 +28,7 @@ function Product({ product, singelProductId, setSingleProductId }) {
           </button>
         </div>
         <div>
-          <p className="max-w-[474px] text-[16px]">{details}</p>
+          <p className="lg:max-w-[474px] text-[16px]">{details}</p>
         </div>
       </div>
     </>

@@ -14,16 +14,16 @@ function KorAndProduct({ product }) {
   }, [singelProductId, products]);
 
   return (
-    <div id={title} className="flex space-x-12">
-      <div>
+    <div id={title} className="lg:flex lg:space-x-12">
+      <div className="pb-4 lg:pb-0">
         <button className="text-sm border border-black px-[5px] py-px rounded-lg">
           {title}
         </button>
       </div>
       <div>
-        <p className="max-w-[680px] text-2xl">{details}</p>
-        <div className="py-6 flex space-x-20">
-          <div className="space-y-20 ">
+        <p className="lg:max-w-[680px] text-2xl">{details}</p>
+        <div className="grid lg:flex lg:space-x-20">
+          <div className="lg:space-y-20 order-last lg:order-first">
             {products?.map((product) => (
               <Product
                 key={product?.title}
@@ -33,9 +33,10 @@ function KorAndProduct({ product }) {
               />
             ))}
           </div>
+
           <div>
             {products !== undefined && products?.length !== 0 && (
-              <div className="relative w-[350px] h-[390px] border rounded-2xl overflow-hidden">
+              <div className="relative my-5 lg:my-0 lg:w-[350px] lg:h-[390px] border rounded-2xl overflow-hidden">
                 <img
                   src={singleProduct?.img}
                   alt="Avatar"

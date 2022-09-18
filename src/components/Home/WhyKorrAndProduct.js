@@ -78,7 +78,7 @@ function WhyKorrAndProduct() {
       </section>
 
       {/* details  */}
-      <section className="space-y-20 py-6">
+      <section className="space-y-10 lg:space-y-20 py-6">
         {korAndProducts?.map((product) => (
           <KorAndProduct key={product?.id} product={product} />
         ))}
