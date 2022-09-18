@@ -59,7 +59,7 @@ function WhyKorrAndProduct() {
           grog yardarm hempen halter furl. Swab barque interloper chantey
           doubloon starboard grog black jack gangway rutters.
         </p>
-        <div>
+        <div className="hidden lg:block">
           <NavLink
             className="flex items-center justify-end group text-[16px] text-[#8f908e] hover:text-[#34d601] "
             to="#why-korr"
