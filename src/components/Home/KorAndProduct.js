@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Product from "./Product";
+import { motion } from "framer-motion";
+import viewImgVariants from "../../utils/viewImgVariants";
 
 function KorAndProduct({ product }) {
   const { title, details, product: products } = product;
@@ -40,21 +42,29 @@ function KorAndProduct({ product }) {
 
           <div>
             {products !== undefined && products?.length !== 0 && (
-              <div className="relative my-5 lg:my-0 lg:w-[350px] lg:h-[390px] border rounded-2xl overflow-hidden">
-                <img
-                  src={singleProduct?.img}
-                  alt="Avatar"
-                  className="object-cover w-full h-full"
-                />
-                <div className="absolute w-full py-2.5 top-0 inset-x-0">
-                  <div className="flex justify-between px-3 text-white text-[16px]">
-                    <h6 className="">{singleProduct?.title}</h6>
-                    <h6 className="text-[#8f908e]">
-                      {singleProduct?.productId}/{products?.length}
-                    </h6>
+              <motion.div
+                initial="offscreen"
+                whileInView="onscreen"
+                viewport={{ once: true, amount: 0.5 }}
+              >
+                <motion.div variants={viewImgVariants}>
+                  <div className="relative my-5 lg:my-0 lg:w-[350px] lg:h-[390px] border rounded-2xl overflow-hidden">
+                    <img
+                      src={singleProduct?.img}
+                      alt="Avatar"
+                      className="object-cover w-full h-full"
+                    />
+                    <div className="absolute w-full py-2.5 top-0 inset-x-0">
+                      <div className="flex justify-between px-3 text-white text-[16px]">
+                        <h6 className="">{singleProduct?.title}</h6>
+                        <h6 className="text-[#8f908e]">
+                          {singleProduct?.productId}/{products?.length}
+                        </h6>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
+                </motion.div>
+              </motion.div>
             )}
           </div>
         </div>
