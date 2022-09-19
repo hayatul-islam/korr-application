@@ -5,9 +5,28 @@ import Menubar from "./Menubar";
 import MobileMenu from "./MobileMenu";
 import ScrollMenu from "./ScrollMenu";
 
+// const variants = {
+//   open: { display: "block", x: 0},
+//   closed: { display: "none", x: "-100%" },
+// };
+
 const variants = {
-  open: { display: "block", x: 0 },
-  closed: { display: "none", x: "-100%" },
+  open: {
+    x: 0,
+    // opacity: 1,
+    display: "block",
+    transition: {
+      y: { stiffness: 1000, velocity: -700, duration: 3 },
+    },
+  },
+  closed: {
+    x: 1000,
+    // opacity: 0,
+    display: "none",
+    transition: {
+      x: { stiffness: 1000, duration: 1 },
+    },
+  },
 };
 
 export default function Header() {
