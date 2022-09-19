@@ -25,7 +25,7 @@ function KorAndProduct({ product }) {
         <div className="grid lg:flex lg:space-x-20">
           <div
             className={`lg:space-y-10 order-last lg:order-first ${
-              products?.length > 0 && "lg:py-6 "
+              products?.length > 0 && "lg:py-6"
             } `}
           >
             {products?.map((product) => (
