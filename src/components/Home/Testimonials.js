@@ -1,4 +1,6 @@
+import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
+import viewVariants from "../../utils/viewVariants";
 import Testimonial from "./Testimonial";
 const testimonials = [
   {
@@ -33,13 +35,21 @@ function Testimonials() {
 
   return (
     <>
-      <div className="bg-[#20231f] py-6 lg:py-8 px-6">
-        <Testimonial
-          testimonial={testimonial}
-          totolTestimonial={testimonials?.length}
-          setId={setId}
-        />
-      </div>
+      <motion.div
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true, amount: 0.5 }}
+      >
+        <motion.div variants={viewVariants}>
+          <div className="bg-[#20231f] py-6 lg:py-8 px-6">
+            <Testimonial
+              testimonial={testimonial}
+              totolTestimonial={testimonials?.length}
+              setId={setId}
+            />
+          </div>
+        </motion.div>
+      </motion.div>
     </>
   );
 }
