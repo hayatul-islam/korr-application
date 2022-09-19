@@ -5,7 +5,7 @@ function Menubar() {
   const [hover, setHover] = useState(false);
   return (
     <>
-      <nav className="flex text-xl space-x-6 bg-white shadow-lg px-4 py-2 rounded font-normal">
+      <nav className="flex text-xl space-x-6 bg-white shadow-lg px-4 py-2 rounded font-norma ">
         <NavLink
           onMouseEnter={() => setHover(true)}
           onMouseLeave={() => setHover(false)}

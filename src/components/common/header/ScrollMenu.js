@@ -16,7 +16,9 @@ export default function ScrollHeader() {
         >
           korr
         </button>
-        <Menubar />
+        <div className="w-[410px]">
+          <Menubar />
+        </div>
       </div>
     </>
   );
