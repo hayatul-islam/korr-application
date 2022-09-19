@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { NavLink } from "react-router-dom";
+import viewImgVariants from "../../utils/viewImgVariants";
 import viewVariants from "../../utils/viewVariants";
 
 function About() {
@@ -35,21 +36,19 @@ function About() {
         <div className="grid md:grid-cols-2 gap-8 pt-8">
           <div className="space-y-6">
             <motion.div
-              initial={{ opacity: 0, scale: 0.5 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{
-                duration: 1,
-                delay: 0.1,
-                ease: [0, 0.71, 0.2, 1.01],
-              }}
+              initial="offscreen"
+              whileInView="onscreen"
+              viewport={{ once: true, amount: 0.5 }}
             >
-              <div className="h-[230px] sm:h-[260px]">
-                <img
-                  className="w-full h-full rounded"
-                  src="https://images.unsplash.com/photo-1504309092620-4d0ec726efa4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTA4fHxjb2xvcmZ1bCUyMGFib3V0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                  alt=""
-                />
-              </div>
+              <motion.div variants={viewImgVariants}>
+                <div className="h-[230px] sm:h-[260px]">
+                  <img
+                    className="w-full h-full rounded"
+                    src="https://images.unsplash.com/photo-1504309092620-4d0ec726efa4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTA4fHxjb2xvcmZ1bCUyMGFib3V0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    alt=""
+                  />
+                </div>
+              </motion.div>
             </motion.div>
             <div>
               <motion.div
@@ -81,23 +80,21 @@ function About() {
             </div>
           </div>
           <div className="space-y-6">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.5 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{
-                duration: 1,
-                delay: 0.1,
-                ease: [0, 0.71, 0.2, 1.01],
-              }}
-            >
-              <div className="h-[230px] sm:h-[260px]">
-                <img
+            <div>
+              <motion.div
+                className="h-[230px] sm:h-[260px]"
+                initial="offscreen"
+                whileInView="onscreen"
+                viewport={{ once: true, amount: 0.5 }}
+              >
+                <motion.img
+                  variants={viewImgVariants}
                   className="w-full h-full rounded"
                   src="https://images.unsplash.com/photo-1628841878739-f2f0fc1c0fb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTAwfDE3ODE0MDh8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
                   alt=""
                 />
-              </div>
-            </motion.div>
+              </motion.div>
+            </div>
             <div>
               <motion.div
                 initial="offscreen"

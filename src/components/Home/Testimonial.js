@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
+import viewImgVariants from "../../utils/viewImgVariants";
 
 function Testimonial({ testimonial, totolTestimonial, setId }) {
   const { title, body, id, img } = testimonial;
@@ -65,28 +66,26 @@ function Testimonial({ testimonial, totolTestimonial, setId }) {
           </div>
         </div>
         <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{
-            duration: 1,
-            delay: 0.1,
-            ease: [0, 0.71, 0.2, 1.01],
-          }}
+          initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ once: true, amount: 0.5 }}
         >
-          <div className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] lg:pb-6">
-            <div className="flex justify-between pb-6">
-              <button
-                className={`lg:hidden text-sm border border-[#484b47] text-[#8f908e] px-[5px] py-px rounded-lg`}
-              >
-                Testimonials
-              </button>
-              <h5 className="text-white lg:hidden">
-                {id}/{totolTestimonial}
-              </h5>
-            </div>
+          <motion.div variants={viewImgVariants}>
+            <div className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] lg:pb-6">
+              <div className="flex justify-between pb-6">
+                <button
+                  className={`lg:hidden text-sm border border-[#484b47] text-[#8f908e] px-[5px] py-px rounded-lg`}
+                >
+                  Testimonials
+                </button>
+                <h5 className="text-white lg:hidden">
+                  {id}/{totolTestimonial}
+                </h5>
+              </div>
 
-            <img className="w-full h-full rounded-xl" src={img} alt="" />
-          </div>
+              <img className="w-full h-full rounded-xl" src={img} alt="" />
+            </div>
+          </motion.div>
         </motion.div>
       </div>
     </>
