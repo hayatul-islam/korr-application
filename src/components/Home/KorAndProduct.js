@@ -23,7 +23,11 @@ function KorAndProduct({ product }) {
       <div>
         <p className="lg:max-w-[680px] text-2xl">{details}</p>
         <div className="grid lg:flex lg:space-x-20">
-          <div className="lg:space-y-20 order-last lg:order-first">
+          <div
+            className={`lg:space-y-10 order-last lg:order-first ${
+              products?.length > 0 && "lg:py-6 "
+            } `}
+          >
             {products?.map((product) => (
               <Product
                 key={product?.title}
