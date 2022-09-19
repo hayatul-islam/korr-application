@@ -40,13 +40,13 @@ function Testimonial({ testimonial, totolTestimonial, setId }) {
           <div className="flex justify-between lg:items-end pt-12 lg:pt-0">
             <button
               onClick={() => hanleLoaded("previous")}
-              className="text-white text-[16px] hover:underline z-50"
+              className="text-white text-[16px] hover:underline "
             >
               Previous
             </button>
             <button
               onClick={() => hanleLoaded("next")}
-              className="text-white text-[16px] hover:underline z-50 lg:hidden"
+              className="text-white text-[16px] hover:underline  lg:hidden"
             >
               Next
             </button>

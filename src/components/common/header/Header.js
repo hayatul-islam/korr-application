@@ -40,7 +40,7 @@ export default function Header() {
       <div
         className={`fixed w-full md:static ${
           isOpen && "bg-[#20231f] md:bg-transparent "
-        }`}
+        } z-50`}
       >
         <div className="flex justify-between items-center px-6 pt-6">
           <div className={`w-[68px] h-[30px] cursor-pointer `}>
