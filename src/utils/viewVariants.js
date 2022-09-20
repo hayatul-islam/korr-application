@@ -1,4 +1,4 @@
-const viewVariants = {
+export const viewVariants = {
   offscreen: {
     y: 100,
   },
@@ -11,4 +11,4 @@ const viewVariants = {
     },
   },
 };
-export default viewVariants;
+export const viewport = { once: true, amount: 0.5 };

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
-import viewImgVariants from "../../utils/viewImgVariants";
+import { viewImgVariants } from "../../utils/viewImgVariants";
+import { viewport } from "../../utils/viewVariants";
 
 function Testimonial({ testimonial, totolTestimonial, setId }) {
   const { title, body, id, img } = testimonial;
@@ -68,7 +69,7 @@ function Testimonial({ testimonial, totolTestimonial, setId }) {
         <motion.div
           initial="offscreen"
           whileInView="onscreen"
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={viewport}
         >
           <motion.div variants={viewImgVariants}>
             <div className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] lg:pb-6">

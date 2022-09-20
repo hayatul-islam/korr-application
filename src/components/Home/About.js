@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { NavLink } from "react-router-dom";
-import viewImgVariants from "../../utils/viewImgVariants";
-import viewVariants from "../../utils/viewVariants";
+import { viewImgVariants } from "../../utils/viewImgVariants";
+import { viewport, viewVariants } from "../../utils/viewVariants";
 
 function About() {
   return (
@@ -11,7 +11,7 @@ function About() {
         <motion.div
           initial="offscreen"
           whileInView="onscreen"
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={viewport}
         >
           <motion.div variants={viewVariants}>
             <div className="md:pt-12 space-y-4">
@@ -38,7 +38,7 @@ function About() {
             <motion.div
               initial="offscreen"
               whileInView="onscreen"
-              viewport={{ once: true, amount: 0.5 }}
+              viewport={viewport}
             >
               <motion.div variants={viewImgVariants}>
                 <div className="h-[230px] sm:h-[260px]">
@@ -54,7 +54,7 @@ function About() {
               <motion.div
                 initial="offscreen"
                 whileInView="onscreen"
-                viewport={{ once: true, amount: 0.5 }}
+                viewport={viewport}
               >
                 <motion.div variants={viewVariants}>
                   <div className="lg:flex space-y-3 lg:space-y-0">
@@ -85,7 +85,7 @@ function About() {
                 className="h-[230px] sm:h-[260px]"
                 initial="offscreen"
                 whileInView="onscreen"
-                viewport={{ once: true, amount: 0.5 }}
+                viewport={viewport}
               >
                 <motion.img
                   variants={viewImgVariants}
@@ -99,7 +99,7 @@ function About() {
               <motion.div
                 initial="offscreen"
                 whileInView="onscreen"
-                viewport={{ once: true, amount: 0.5 }}
+                viewport={viewport}
               >
                 <motion.div variants={viewVariants}>
                   <div className="lg:flex space-y-3 lg:space-y-0">

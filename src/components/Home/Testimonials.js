@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
-import viewVariants from "../../utils/viewVariants";
+import { viewport, viewVariants } from "../../utils/viewVariants";
 import Testimonial from "./Testimonial";
 const testimonials = [
   {
@@ -39,7 +39,7 @@ function Testimonials() {
         <motion.div
           initial="offscreen"
           whileInView="onscreen"
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={viewport}
         >
           <motion.div variants={viewVariants}>
             <Testimonial

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import { VscChevronRight } from "react-icons/vsc";
 import { NavLink } from "react-router-dom";
-import viewVariants from "../../utils/viewVariants";
+import { viewport, viewVariants } from "../../utils/viewVariants";
 import KorAndProduct from "./KorAndProduct";
 //fake data
 const korAndProducts = [
@@ -56,7 +56,7 @@ function WhyKorrAndProduct() {
       <motion.div
         initial="offscreen"
         whileInView="onscreen"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={viewport}
       >
         <motion.div variants={viewVariants}>
           <section className="flex justify-between py-6">
@@ -93,7 +93,7 @@ function WhyKorrAndProduct() {
           // <motion.div
           //   initial="offscreen"
           //   whileInView="onscreen"
-          //   viewport={{ once: true, amount: 0.5 }}
+          //   viewport={viewport}
           // >
           //   <motion.div variants={viewVariants}>
           <KorAndProduct key={product?.id} product={product} />

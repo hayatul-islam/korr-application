@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { NavLink } from "react-router-dom";
-import viewVariants from "../../utils/viewVariants";
+import { viewport, viewVariants } from "../../utils/viewVariants";
 import Contract from "./contract/Contract";
 
 function Footer() {
@@ -11,7 +11,7 @@ function Footer() {
         <motion.div
           initial="offscreen"
           whileInView="onscreen"
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={viewport}
         >
           <motion.div variants={viewVariants}>
             <div className="block md:flex md:justify-between space-y-8 md:space-x-2">

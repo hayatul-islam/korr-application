@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import React, { useEffect, useRef } from "react";
-import viewVariants from "../../utils/viewVariants";
+import { viewport, viewVariants } from "../../utils/viewVariants";
 
 function Product({ product, singelProductId, setSingleProductId }) {
   const { title, details, productId } = product;
@@ -20,7 +20,7 @@ function Product({ product, singelProductId, setSingleProductId }) {
       <motion.div
         initial="offscreen"
         whileInView="onscreen"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={viewport}
       >
         <motion.div variants={viewVariants}>
           <div ref={ref} id={productId} className="lg:flex lg:space-x-12 ">

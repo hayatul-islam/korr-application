@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
-import viewImgVariants from "../../../utils/viewImgVariants";
+import { viewImgVariants } from "../../../utils/viewImgVariants";
+import { viewport } from "../../../utils/viewVariants";
 
 function ContractInfo({ setIsContract }) {
   const handleContract = () => {
@@ -12,7 +13,7 @@ function ContractInfo({ setIsContract }) {
         <motion.div
           initial="offscreen"
           whileInView="onscreen"
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={viewport}
         >
           <motion.div variants={viewImgVariants}>
             <div className="lg:h-[388px]">

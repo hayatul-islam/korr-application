@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
-import viewImgVariants from "../../utils/viewImgVariants";
-import viewVariants from "../../utils/viewVariants";
+import { viewImgVariants } from "../../utils/viewImgVariants";
+import { viewport, viewVariants } from "../../utils/viewVariants";
 import Product from "./Product";
 
 function KorAndProduct({ product }) {
@@ -21,7 +21,7 @@ function KorAndProduct({ product }) {
       <motion.div
         initial="offscreen"
         whileInView="onscreen"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={viewport}
       >
         <motion.div variants={viewVariants}>
           <div className="pb-4 lg:pb-0">
@@ -35,7 +35,7 @@ function KorAndProduct({ product }) {
         <motion.div
           initial="offscreen"
           whileInView="onscreen"
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={viewport}
         >
           <motion.div variants={viewVariants}>
             <p className="lg:max-w-[680px] text-2xl">{details}</p>
@@ -63,7 +63,7 @@ function KorAndProduct({ product }) {
               <motion.div
                 initial="offscreen"
                 whileInView="onscreen"
-                viewport={{ once: true, amount: 0.5 }}
+                viewport={viewport}
               >
                 <motion.div variants={viewImgVariants}>
                   <div className="relative my-5 lg:my-0 lg:w-[350px] lg:h-[390px] border rounded-2xl overflow-hidden">

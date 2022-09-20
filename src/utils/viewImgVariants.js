@@ -1,4 +1,4 @@
-const viewImgVariants = {
+export const viewImgVariants = {
   offscreen: {
     opacity: 0.1,
     // scale: 0.5,
@@ -13,5 +13,3 @@ const viewImgVariants = {
     },
   },
 };
-
-export default viewImgVariants;

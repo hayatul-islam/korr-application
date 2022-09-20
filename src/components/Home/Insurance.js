@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { NavLink } from "react-router-dom";
-import viewVariants from "../../utils/viewVariants";
+import { viewport, viewVariants } from "../../utils/viewVariants";
 
 function Insurance() {
   return (
@@ -10,7 +10,7 @@ function Insurance() {
         <motion.div
           initial="offscreen"
           whileInView="onscreen"
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={viewport}
         >
           <motion.div variants={viewVariants}>
             <div className="md:max-w-[550px]">
@@ -24,7 +24,7 @@ function Insurance() {
         <motion.div
           initial="offscreen"
           whileInView="onscreen"
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={viewport}
         >
           <motion.div variants={viewVariants}>
             <div className="md:max-w-[480px] ">
