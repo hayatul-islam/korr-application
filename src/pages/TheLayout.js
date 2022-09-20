@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from "../components/common/Footer";
 import Header from "../components/common/header/Header";
+import BookADemo from "./BookADemo";
 import Home from "./Home";
 import Product from "./Product";
 
@@ -13,6 +14,7 @@ export default function TheLayout() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/product" element={<Product />} />
+          <Route path="/book-a-demo" element={<BookADemo />} />
         </Routes>
         <Footer />
       </BrowserRouter>
