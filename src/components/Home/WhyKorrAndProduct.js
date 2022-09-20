@@ -90,15 +90,15 @@ function WhyKorrAndProduct() {
       {/* details  */}
       <section className="space-y-10 lg:space-y-20 py-6">
         {korAndProducts?.map((product) => (
-          <motion.div
-            initial="offscreen"
-            whileInView="onscreen"
-            viewport={{ once: true, amount: 0.5 }}
-          >
-            <motion.div variants={viewVariants}>
-              <KorAndProduct key={product?.id} product={product} />
-            </motion.div>
-          </motion.div>
+          // <motion.div
+          //   initial="offscreen"
+          //   whileInView="onscreen"
+          //   viewport={{ once: true, amount: 0.5 }}
+          // >
+          //   <motion.div variants={viewVariants}>
+          <KorAndProduct key={product?.id} product={product} />
+          //   </motion.div>
+          // </motion.div>
         ))}
       </section>
     </>

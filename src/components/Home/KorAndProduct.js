@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
-import Product from "./Product";
 import { motion } from "framer-motion";
+import React, { useEffect, useState } from "react";
 import viewImgVariants from "../../utils/viewImgVariants";
+import viewVariants from "../../utils/viewVariants";
+import Product from "./Product";
 
 function KorAndProduct({ product }) {
   const { title, details, product: products } = product;
@@ -17,13 +18,30 @@ function KorAndProduct({ product }) {
 
   return (
     <div id={title} className="lg:flex lg:space-x-12">
-      <div className="pb-4 lg:pb-0">
-        <button className="text-sm border border-black px-[5px] py-px rounded-lg">
-          {title}
-        </button>
-      </div>
+      <motion.div
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true, amount: 0.5 }}
+      >
+        <motion.div variants={viewVariants}>
+          <div className="pb-4 lg:pb-0">
+            <button className="text-sm border border-black px-[5px] py-px rounded-lg">
+              {title}
+            </button>
+          </div>
+        </motion.div>
+      </motion.div>
       <div>
-        <p className="lg:max-w-[680px] text-2xl">{details}</p>
+        <motion.div
+          initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ once: true, amount: 0.5 }}
+        >
+          <motion.div variants={viewVariants}>
+            <p className="lg:max-w-[680px] text-2xl">{details}</p>
+          </motion.div>
+        </motion.div>
+
         <div className="grid lg:flex lg:space-x-20">
           <div
             className={`lg:space-y-10 order-last lg:order-first ${

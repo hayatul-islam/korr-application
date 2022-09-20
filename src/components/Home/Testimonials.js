@@ -35,21 +35,21 @@ function Testimonials() {
 
   return (
     <>
-      <motion.div
-        initial="offscreen"
-        whileInView="onscreen"
-        viewport={{ once: true, amount: 0.5 }}
-      >
-        <motion.div variants={viewVariants}>
-          <div className="bg-[#20231f] py-6 lg:py-8 px-6">
+      <div className="bg-[#20231f] py-6 lg:py-8 px-6">
+        <motion.div
+          initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ once: true, amount: 0.5 }}
+        >
+          <motion.div variants={viewVariants}>
             <Testimonial
               testimonial={testimonial}
               totolTestimonial={testimonials?.length}
               setId={setId}
             />
-          </div>
+          </motion.div>
         </motion.div>
-      </motion.div>
+      </div>
     </>
   );
 }
