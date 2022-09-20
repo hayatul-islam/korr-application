@@ -5,6 +5,7 @@ import Header from "../components/common/header/Header";
 import About from "./About";
 import BookADemo from "./BookADemo";
 import Home from "./Home";
+import Mossion from "./Mossion";
 import Product from "./Product";
 
 export default function TheLayout() {
@@ -17,6 +18,7 @@ export default function TheLayout() {
           <Route path="/product" element={<Product />} />
           <Route path="/book-a-demo" element={<BookADemo />} />
           <Route path="/about" element={<About />} />
+          <Route path="/mission" element={<Mossion />} />
         </Routes>
         <Footer />
       </BrowserRouter>
