@@ -57,9 +57,9 @@ function FAQ() {
           </motion.div>
         </motion.div>
         <div className="py-8">
-          <div className="grid grid-cols-[70%_30%] text-[#8f908e] text-[12px] pb-3">
+          <div className="grid lg:grid-cols-[70%_30%] text-[#8f908e] text-[12px] pb-3">
             <p>Question</p>
-            <p>Area</p>
+            <p className="hidden lg:block">Area</p>
           </div>
           {data?.map((fqa) => (
             <FqaItim key={fqa?.id} fqa={fqa} />
