@@ -13,7 +13,7 @@ function Insurance() {
           viewport={{ once: true, amount: 0.5 }}
         >
           <motion.div variants={viewVariants}>
-            <div className="md:w-[550px]">
+            <div className="md:max-w-[550px]">
               <h2 className="text-4xl sm:text-5xl lg:text-7xl font-medium mb-4">
                 The Rebirth of Insurance
               </h2>
@@ -27,7 +27,7 @@ function Insurance() {
           viewport={{ once: true, amount: 0.5 }}
         >
           <motion.div variants={viewVariants}>
-            <div className="md:w-[480px] ">
+            <div className="md:max-w-[480px] ">
               <p className="text-[16px]">
                 Korr is the first truly versatile insurance management tool.
                 With Korr, insurance professionals develop and manage new and
