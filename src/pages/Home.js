@@ -1,8 +1,8 @@
 import React from "react";
 import About from "../components/Home/About";
+import HomeVideoAnimation from "../components/Home/HomeVideoAnimation";
 import Insurance from "../components/Home/Insurance";
 import Testimonials from "../components/Home/Testimonials";
-import VideoAnimation from "../components/Home/VideoAnimation";
 import WhyKorrAndProduct from "../components/Home/WhyKorrAndProduct";
 
 export default function Home() {
@@ -11,7 +11,7 @@ export default function Home() {
       <div className="px-6">
         <Insurance />
       </div>
-      <VideoAnimation />
+      <HomeVideoAnimation />
       <div className="px-6">
         <WhyKorrAndProduct />
       </div>
