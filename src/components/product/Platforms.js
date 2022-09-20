@@ -9,7 +9,7 @@ const features = [
     id: 1,
     name: "Why Korr",
     title: "Marzipan donut dessert ",
-    img: "https://images.unsplash.com/photo-1621619856624-42fd193a0661?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTV8fGRhcmt8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+    img: "https://images.unsplash.com/photo-1618685959528-2700ba389504?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTh8fGRhcmt8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
     body1:
       "Apple pie gummies dessert muffin soufflé. Halvah dessert soufflé cheesecake halvah carrot cake tiramisu topping marshmallow. Powder biscuit liquorice croissant tootsie roll tiramisu jujubes. Toffee sweet roll carrot cake dessert cheesecake marzipan gummies. Donut apple pie biscuit tart chocolate bar tiramisu candy canes halvah bonbon",
     body2:
@@ -28,7 +28,7 @@ const features = [
   {
     id: 3,
     name: "Feature",
-    title: "Chocolate bar powder gummi bears croissant",
+    title: "Chocolate bar powder bears croissant",
     img: "https://images.unsplash.com/photo-1513436539083-9d2127e742f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTh8fGRhcmt8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
     body1:
       "Dessert apple pie cupcake tart dragée. Pie halvah brownie ice cream marzipan candy canes. Sweet roll tiramisu cupcake soufflé icing muffin halvah. ",

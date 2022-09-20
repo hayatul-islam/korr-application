@@ -6,6 +6,7 @@ export default function ScrollHeader() {
   const navigate = useNavigate();
   const handleHome = () => {
     navigate("/");
+    window.scrollTo(0, 0);
   };
   return (
     <>

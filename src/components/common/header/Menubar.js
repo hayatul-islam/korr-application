@@ -3,12 +3,16 @@ import { NavLink } from "react-router-dom";
 
 function Menubar() {
   const [hover, setHover] = useState(false);
+  const handleNavigate = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <>
       <nav className="flex text-xl space-x-6 bg-white shadow-lg px-4 py-2 rounded font-norma ">
         <NavLink
           onMouseEnter={() => setHover(true)}
           onMouseLeave={() => setHover(false)}
+          onClick={handleNavigate}
           className={({ isActive }) =>
             isActive
               ? "text-[#34d601] font-medium"
@@ -19,6 +23,7 @@ function Menubar() {
           Product
         </NavLink>
         <NavLink
+          onClick={handleNavigate}
           onMouseEnter={() => setHover(true)}
           onMouseLeave={() => setHover(false)}
           className={({ isActive }) =>
@@ -31,6 +36,7 @@ function Menubar() {
           Book a Demo
         </NavLink>
         <NavLink
+          onClick={handleNavigate}
           onMouseEnter={() => setHover(true)}
           onMouseLeave={() => setHover(false)}
           className={({ isActive }) =>
@@ -43,6 +49,7 @@ function Menubar() {
           About
         </NavLink>
         <NavLink
+          onClick={handleNavigate}
           onMouseEnter={() => setHover(true)}
           onMouseLeave={() => setHover(false)}
           className={({ isActive }) =>

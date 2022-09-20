@@ -5,6 +5,7 @@ import Contract from "../contract/Contract";
 function MobileMenu({ setIsOpen }) {
   const handleNavigate = () => {
     setIsOpen(false);
+    window.scrollTo(0, 0);
   };
   return (
     <div className="bg-[#20231f] px-3 py-4">
