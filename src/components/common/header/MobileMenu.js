@@ -2,30 +2,37 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import Contract from "../contract/Contract";
 
-function MobileMenu() {
+function MobileMenu({ setIsOpen }) {
+  const handleNavigate = () => {
+    setIsOpen(false);
+  };
   return (
-    <div className="bg-[#20231f] px-3 py-8 ">
+    <div className="bg-[#20231f] px-3 py-4">
       <div className="grid grid-cols-2">
         <nav>
           <NavLink
+            onClick={handleNavigate}
             className="block text-[30px] text-white cursor-pointer"
             to="/"
           >
             Home
           </NavLink>
           <NavLink
+            onClick={handleNavigate}
             className="block text-[30px] text-white cursor-pointer"
             to="/product"
           >
             Product
           </NavLink>
           <NavLink
+            onClick={handleNavigate}
             className="block text-[30px] text-white cursor-pointer"
             to="/about"
           >
             About
           </NavLink>
           <NavLink
+            onClick={handleNavigate}
             className="block text-[30px] text-white cursor-pointer"
             to="/mission"
           >

@@ -126,7 +126,7 @@ export default function Header() {
         </div>
         <motion.div animate={isOpen ? "open" : "closed"} variants={variants}>
           <div className="md:hidden">
-            <MobileMenu />
+            <MobileMenu setIsOpen={setIsOpen} />
           </div>
         </motion.div>
       </div>
