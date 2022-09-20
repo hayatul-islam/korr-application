@@ -55,6 +55,7 @@ function FqaItim({ fqa }) {
             </div>
           </div>
         </div>
+
         <div className="lg:max-w-[600px]">
           {isOpen && (
             <div className="pt-6 ">
