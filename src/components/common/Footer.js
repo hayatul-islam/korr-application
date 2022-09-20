@@ -14,7 +14,7 @@ function Footer() {
           viewport={{ once: true, amount: 0.5 }}
         >
           <motion.div variants={viewVariants}>
-            <div className="block md:flex md:justify-between md:space-x-2">
+            <div className="block md:flex md:justify-between space-y-8 md:space-x-2">
               <div className="lg:flex">
                 <div className="min-w-[100px]">
                   <button
