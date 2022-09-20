@@ -6,7 +6,7 @@ import viewVariants from "../../utils/viewVariants";
 function Insurance() {
   return (
     <>
-      <div className=" md:flex justify-between pt-24 md:pt-20 lg:pt-48 py-6">
+      <div className=" md:flex justify-between pt-32 md:pt-28 lg:pt-48 py-6">
         <motion.div
           initial="offscreen"
           whileInView="onscreen"
