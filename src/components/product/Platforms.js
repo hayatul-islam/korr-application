@@ -1,4 +1,6 @@
+import { motion } from "framer-motion";
 import React from "react";
+import { viewport, viewVariants } from "../../utils/viewVariants";
 import Feature from "./Feature";
 
 // fake data
@@ -38,23 +40,32 @@ const features = [
 function Platforms() {
   return (
     <>
-      <div className="py-6 space-y-5">
-        <div className="">
-          <button
-            className={`text-sm border border-black px-[5px] py-px rounded-md`}
-          >
-            Platform
-          </button>
-        </div>
-        <div>
-          <p className="text-[20px] md:text-3xl font-medium md:leading-10">
-            Cotton candy candy canes brownie cake danish pastry pudding. Pie
-            cake danish sugar plum halvah tiramisu. Donut bonbon gingerbread
-            cotton candy danish fruitcake. Croissant sweet roll tart gummi bears
-            caramels brownie macaroon bonbon tiramisu.
-          </p>
-        </div>
-      </div>
+      <motion.div
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={viewport}
+      >
+        <motion.div variants={viewVariants}>
+          <div className="py-6 space-y-5">
+            <div className="">
+              <button
+                className={`text-sm border border-black px-[5px] py-px rounded-md`}
+              >
+                Platform
+              </button>
+            </div>
+
+            <div>
+              <p className="text-[20px] md:text-3xl font-medium md:leading-10">
+                Cotton candy candy canes brownie cake danish pastry pudding. Pie
+                cake danish sugar plum halvah tiramisu. Donut bonbon gingerbread
+                cotton candy danish fruitcake. Croissant sweet roll tart gummi
+                bears caramels brownie macaroon bonbon tiramisu.
+              </p>
+            </div>
+          </div>
+        </motion.div>
+      </motion.div>
       <div className="py-12">
         {features?.map((feature) => (
           <Feature key={feature?.id} feature={feature} />
