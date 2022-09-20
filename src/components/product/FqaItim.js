@@ -7,7 +7,7 @@ function FqaItim({ fqa }) {
 
   return (
     <>
-      <div className="py-6 border-t-2">
+      <div className="py-4 lg:py-6 border-t-2">
         <div
           onClick={() => setIsOpen(!isOpen)}
           className={`flex justify-between lg:grid lg:grid-cols-[70%_30%] ${
